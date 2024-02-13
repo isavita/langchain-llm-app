@@ -3,9 +3,6 @@ import streamlit as st
 
 st.title("Pet Name Generator")
 
-# pet_type = st.text_input("Enter the type of pet you want to generate names for")
-# if st.button("Generate"):
-#     st.write(lch.generate_pet_name(pet_type))
 pet_type = st.sidebar.selectbox("What is your pet?", ("dog", "cat", "bird", "fish", "reptile"))
 
 if pet_type:
